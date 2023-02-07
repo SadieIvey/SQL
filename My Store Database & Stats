@@ -1,0 +1,22 @@
+CREATE TABLE store( id integer primary key, name text, size integer, color text, price integer);
+
+INSERT INTO store VALUES
+(1, "tshirt", "small", "black", 10),
+(2, "tshirt", "medium", "black", 10),
+(3, "tshirt", "large", "black", 10),
+(4, "tshirt", "small", "white", 10),
+(5, "tshirt", "medium", "white", 10),
+(6, "tshirt", "large", "white", 10),
+(7, "pants", "small", "grey", 15),
+(8, "pants", "medium", "grey", 15),
+(9, "pants", "large", "grey", 15),
+(10, "pants", "small", "blue", 15),
+(11, "pants", "medium", "blue", 15),
+(12, "pants", "large", "blue", 15),
+(13, "sweater", "one size fits all", "black", 40),
+(14, "sweater", "one size fits all", "white", 40),
+(15, "sweater", "one size fits all", "grey", 40)
+;
+SELECT * FROM store ORDER BY price;
+
+SELECT AVG (price) FROM store
